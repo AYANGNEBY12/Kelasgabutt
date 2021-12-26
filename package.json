@@ -1,7 +1,7 @@
 {
-  "name": "api-yuzzu",
+  "name": "Kelas 8B",
   "version": "1.1.0",
-  "description": "My Rest Api Projectttttt",
+  "description": "tes",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
