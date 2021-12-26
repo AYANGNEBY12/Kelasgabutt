@@ -22,7 +22,7 @@ window['CboxReady'] = function (Cbox) {
   <body>
    <!-- <audio autoplay="true" src="https://storage.caliph71.xyz/audio/AUD-20211011-WA0273.m4a"></audio> -->
     <header>
-      <a href="https://instagram.com/melcanz.io" class="logo">MELCANZ API</a>
+      <a href="https://instagram.com/azkan_e" class="logo">DEVELOPER BY AZIS</a>
       <div class="navigation">
         <ul class="menu">
           <div class="close-btn"></div>
@@ -46,6 +46,168 @@ window['CboxReady'] = function (Cbox) {
                   <li class="more-item"><a href="#">Jadwal kelompok 2</a></li>
                 </ul>
               </li>
+<section class="section-home">
+<div class="container-fluid">
+                <!-- *************************************************************** -->
+                <!-- Start First Cards -->
+                <!-- *************************************************************** -->
+                <div class="card-group">
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium" id="ipanda"></h2>
+                                        </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">IP address</h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+                                    <span class="opacity-7 text-muted"><i data-feather="globe"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium" id="JamSekarang"></h2>
+                                      </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate" id="UcapanSekarang"></h6>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium" id="batrai"></h2>
+                                      </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Your Battery</h6>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-right">
+                        <div class="card-body">
+                            <div class="d-flex d-lg-flex d-md-block align-items-center">
+                                <div>
+                                    <div class="d-inline-flex align-items-center">
+                                        <h2 class="text-dark mb-1 font-weight-medium" id="visits"></h2>
+                                      </div>
+                                    <h6 class="text-muted font-weight-normal mb-0 w-100 text-truncate">Total Visit</h6>
+                                </div>
+                                <div class="ml-auto mt-md-3 mt-lg-0">
+                                    <span class="opacity-7 text-muted"><i data-feather="user-plus"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <section class="section-two">
+      <h2>melcanz<br>api</h2>
+       <p>Halo, Terima Kasih Telah Mengunjungi Rest API ini Silahkan Gunakan dengan bijak!</p>
+      </section>
+
+    <script type="text/javascript">
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+    
+    <script>
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script>
+function checkTime(i) {
+
+		    if (i < 10) {
+
+		        i = "0" + i;
+
+		    }
+
+		    return i;
+
+		}
+	window.setTimeout("waktu()", 1000);
+ 
+	function waktu() {
+		var d = new Date();
+  const jam = d.getHours();
+  const menit = d.getMinutes();
+  const detik = d.getSeconds();
+
+  var ucapanWaktu = 'Selamat Pagi'
+
+if (jam >= '03' && jam <= '10') {				ucapanWaktu = 'Selamat Pagi'
+
+} else if (jam >= '10' && jam <= '13') {
+
+ucapanWaktu = 'Selamat Siang'
+
+} else if (jam >= '13' && jam <= '18') {
+
+ucapanWaktu = 'Selamat Sore'
+
+} else if (jam >= '18' && jam <= '23') {
+
+ucapanWaktu = 'Selamat Malam'
+
+} else {
+
+ucapanWaktu = 'Selamat Malam'
+
+}                                     
+		setTimeout("waktu()", 1000);
+		document.getElementById("JamSekarang").innerHTML = checkTime(jam) +":"+ checkTime(menit) +":"+ checkTime(detik)
+    document.getElementById("UcapanSekarang").innerHTML = ucapanWaktu
+		
+		
+	}
+</script>
+   <script src="batere.js"></script>
+   <script src="https://storage.caliph71.xyz/ip.js"></script>
+   <script async src="https://api.countapi.xyz/hit/api.melcanz.com/visits?callback=cb"></script>
 
 	</body>
 </html>
