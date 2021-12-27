@@ -16,12 +16,25 @@ RAFLIPEDIA INDONESIA
 <body>
 	
  <div class="kontener2" id="kontener2">
-    <h1>Hai Bwang</h1>
-    <button class="tombol" id="tombol">Mulai Sekarang</button>
+          <p style="color:red">WELCOME MY WEB BY AZIS</p>
   </div>
 
 <div class="kontener" id="kontener">
 <div class="dalemnya_kontener">
+	
+	    }
+  </script>
+  <script>
+    $(document).ready(function () {
+      var audio = new Audio('audio/audio.mp3');
+      $("#tombol").click(function () {
+        $("#kontener2").fadeOut();
+        $("#kontener").fadeIn("4000");
+        audio.play();
+      });
+    });
+  </script>
+  <script>
   
 <!--Kode untuk mematikan fungsi klik kanan di blog-->
 <script type="text/javascript">
