@@ -482,8 +482,65 @@ document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==1
 </div>
 <!--- /POP UP PELAJARAN --->
 
-<div class="box">
+<!--- POP UP Foto --->
+<div id="foto">
+<div class="box-popup">
+<a href="#close" class="close" title="Close">&times;</a>
+<center>
+		<h4 class="berhasil">Foto kelas</h4>
+		<hr class="garis">
+		<div class="scroll">
+		<div class="tab-container">
+		<div class="tab">
+			<button onclick="openHero(event, 'pawal');" class="tombol">Awal masuk kelas</button>
+		
+    <button onclick="openHero(event, 'ppapa');" class="tombol">Dari papan tulis</button>
+	</br>
+	</br>
+    <button onclick="openHero(event, 'psamping');" class="tombol">Dari samping</button>
+    
+    <button onclick="openHero(event, 'pbelakang');" class="tombol">Dari belakang</button>
+	</br>
+	</br>
+	<button onclick="openHero(event, 'prame');" class="tombol">Saat rame {error}</button>
+	</br>
+</div> <!--- tab --->
+	
+	<div id="pawal" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">Dari awal masuk</h4>
+<img src="img/papan.jpg" alt="Gambar Awal" width="500" height="600">
 
+<div class="box">
+</div>
+<div id="pawal" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">Dari awal masuk</h4>
+<img src="img/papan.jpg" alt="Gambar Awal" width="500" height="600">
+
+<div class="box">
+</div>
+<div id="pawal" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">Dari awal masuk</h4>
+<img src="img/papan.jpg" alt="Gambar Awal" width="500" height="600">
+
+<div class="box">
+</div>
+<div id="pawal" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">Dari awal masuk</h4>
+<img src="img/papan.jpg" alt="Gambar Awal" width="500" height="600">
+
+<div class="box">
+</div>
+<div id="pawal" class="gallery">
+				<hr class="garis">
+<h4 class="berhasil">Dari awal masuk</h4>
+<img src="img/papan.jpg" alt="Gambar Awal" width="500" height="600">
+
+<div class="box">
+</div>
 <center>
 <div class="waktu">
 <script src="js/waktu.js"></script>
@@ -492,6 +549,7 @@ document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==1
 </center>
 
 	<button onclick="location.href='#pelajaran';" class="tombol">Jadwal Pelajaran</button>
+	<button onclick="location.href='#foto';" class="tombol">Foto kelas</button>
     <button onclick="location.href='#piket';" class="tombol">Jadwal Piket {error bang}</button>
 	</br>
 	</br>
@@ -516,11 +574,12 @@ document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==1
         	<a href="https://instagram.com/azkan_e"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"><a/><br>
         </p>
     </div>
- 
+ <center>
  <audio controls autoplay muted>
   <source src="../audio/audio.mp3" type="audio/mpeg">
 Failed
-</audio>
+</center>
+
 
 <script type="text/javascript">
 function openHero(evt, heroClass) {
